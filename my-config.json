@@ -1,0 +1,40 @@
+{
+    "sites": [],
+    "crawl": {
+        "enable": true,
+        "telegram": {
+            "enable": true,
+            "pages": 3,
+            "push_to": ["xxx"]
+        },
+        "github": {
+            "enable": true,
+            "pages": 2,
+            "push_to": ["xxx"]
+        },
+        "twitter": {
+            "enable": false
+        },
+        "repositories": [],
+        "pages": [],
+        "scripts": []
+    },
+    "groups": {
+        "xxx": {
+            "emoji": true,
+            "list_only": false,
+            "targets": {
+                "clash": "xxx-clash"
+            }
+        }
+    },
+    "storage": {
+        "engine": "local",
+        "items": {
+            "xxx-clash": {
+                "folder_id": "data",
+                "file_id": "clash.yaml"
+            }
+        }
+    }
+}
