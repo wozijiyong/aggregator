@@ -1,16 +1,52 @@
 {
-    "sites": [],
+    "sites": [
+        {
+            "name": "freefq",
+            "domain": "fastly.jsdelivr.net",
+            "subscribe": [
+                "https://fastly.jsdelivr.net/gh/freefq/free@master/v2"
+            ],
+            "enable": true,
+            "push_to": ["xxx"]
+        },
+        {
+            "name": "ripao",
+            "domain": "fastly.jsdelivr.net",
+            "subscribe": [
+                "https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/sub"
+            ],
+            "enable": true,
+            "push_to": ["xxx"]
+        },
+        {
+            "name": "mianfeifanyi",
+            "domain": "fastly.jsdelivr.net",
+            "subscribe": [
+                "https://fastly.jsdelivr.net/gh/mianfeifanyi/v2ray-subscribe@main/v2ray.txt"
+            ],
+            "enable": true,
+            "push_to": ["xxx"]
+        }
+    ],
     "crawl": {
         "enable": true,
         "telegram": {
             "enable": true,
             "pages": 3,
-            "push_to": ["xxx"]
+            "channels": {
+                "ripaojiedian": {
+                    "push_to": ["xxx"]
+                },
+                "tg_proxy": {
+                    "push_to": ["xxx"]
+                },
+                "v2list": {
+                    "push_to": ["xxx"]
+                }
+            }
         },
         "github": {
-            "enable": true,
-            "pages": 2,
-            "push_to": ["xxx"]
+            "enable": false
         },
         "twitter": {
             "enable": false
